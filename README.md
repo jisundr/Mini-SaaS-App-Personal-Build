@@ -58,9 +58,12 @@ The frontend is located in the `frontend/` directory and uses:
 
 - **Landing Page**: Professional pricing page with three tiers (Free, Pro, Enterprise)
 - **Authentication Pages**: Complete login and signup forms with social login options
+- **Profile Management**: User profile page with subscription details and account settings
+- **Admin Dashboard**: User management interface with statistics and user list table
+- **Complete User Flow**: Connected navigation from pricing → signup → login → profile → admin
 - **Navigation**: Clean navbar with logo and action buttons (Login, Get Started)
 - **Responsive Design**: Mobile-first approach with responsive grid layout
-- **Modern UI Components**: Built with shadcn/ui components (Card, Button, Badge, Input, Label)
+- **Modern UI Components**: Built with shadcn/ui components (Card, Button, Badge, Input, Label, Avatar, Table)
 - **Environment Configuration**: Proper .env setup with example file
 
 ### Available Pages
@@ -68,6 +71,16 @@ The frontend is located in the `frontend/` directory and uses:
 - `/` - Landing page with pricing tiers
 - `/login` - User login page with email/password and social login
 - `/signup` - User registration page with form validation
+- `/profile` - User profile and subscription management
+- `/admin` - Admin dashboard with user management and statistics
+
+### User Journey
+
+1. **Landing Page** - View pricing options (Free $0, Pro $29, Enterprise $99)
+2. **Sign Up** - Create account (Free/Pro buttons → signup page)
+3. **Log In** - Sign in to account (redirects to profile)
+4. **Profile** - Manage personal info, view subscription, change plans
+5. **Admin** - Access user management dashboard (admin button in profile)
 
 ### Available Scripts
 

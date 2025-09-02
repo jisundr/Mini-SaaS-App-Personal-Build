@@ -7,7 +7,8 @@ import { Label } from "@/components/ui/label"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
-import { User, CreditCard, Settings, LogOut } from "lucide-react"
+import Link from "next/link"
+import { User, CreditCard, Settings, LogOut, Shield } from "lucide-react"
 
 export default function ProfilePage() {
   // Mock user data - in real app this would come from authentication state
@@ -222,6 +223,12 @@ export default function ProfilePage() {
                 <Button variant="outline" className="w-full justify-start">
                   <Settings className="h-4 w-4 mr-2" />
                   Account Settings
+                </Button>
+                <Button variant="outline" className="w-full justify-start" asChild>
+                  <Link href="/admin">
+                    <Shield className="h-4 w-4 mr-2" />
+                    Admin Dashboard
+                  </Link>
                 </Button>
                 <Button variant="outline" className="w-full justify-start text-destructive hover:text-destructive">
                   <LogOut className="h-4 w-4 mr-2" />
