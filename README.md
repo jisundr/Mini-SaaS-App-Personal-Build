@@ -57,6 +57,7 @@ The frontend is located in the `frontend/` directory and uses:
 ### Current Features
 
 - **Landing Page**: Professional pricing page with three tiers (Free, Pro, Enterprise)
+- **Navigation**: Clean navbar with logo and action buttons (Login, Get Started)
 - **Responsive Design**: Mobile-first approach with responsive grid layout
 - **Modern UI Components**: Built with shadcn/ui components (Card, Button, Badge)
 - **Environment Configuration**: Proper .env setup with example file
