@@ -6,6 +6,7 @@ A personal SaaS application built with Next.js and TypeScript.
 
 - **Frontend**: Next.js 15 with TypeScript
 - **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
 - **Package Manager**: npm
 
 ## Getting Started
@@ -44,6 +45,7 @@ The frontend is located in the `frontend/` directory and uses:
 - Next.js App Router
 - TypeScript for type safety
 - Tailwind CSS for styling
+- shadcn/ui for UI components
 
 ### Available Scripts
 

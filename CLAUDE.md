@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Status
 
-Next.js frontend has been initialized in the `frontend/` directory with TypeScript and Tailwind CSS configured.
+Next.js frontend has been initialized in the `frontend/` directory with TypeScript, Tailwind CSS, and shadcn/ui configured.
 
 ## Development Setup
 
@@ -28,14 +28,18 @@ Next.js frontend has been initialized in the `frontend/` directory with TypeScri
 - **Framework**: Next.js 15 with App Router
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
 - **Location**: `frontend/` directory
 
 ### Project Structure
 ```
 ├── frontend/           # Next.js application
-│   ├── src/
-│   │   └── app/       # App Router pages
-│   ├── public/        # Static assets
+│   ├── app/           # App Router pages
+│   ├── components/    # UI components
+│   │   └── ui/       # shadcn/ui components
+│   ├── lib/          # Utilities (utils.ts)
+│   ├── public/       # Static assets
+│   ├── components.json  # shadcn/ui config
 │   ├── tailwind.config.ts
 │   ├── next.config.ts
 │   └── package.json
@@ -45,7 +49,7 @@ Next.js frontend has been initialized in the `frontend/` directory with TypeScri
 
 ## Notes for Future Development
 
-- Frontend is now set up with Next.js 15, TypeScript, and Tailwind CSS
+- Frontend is now set up with Next.js 15, TypeScript, Tailwind CSS, and shadcn/ui
 - Consider adding backend API (Express.js, Prisma, PostgreSQL)
 - Plan for authentication system
 - Database design for SaaS features
