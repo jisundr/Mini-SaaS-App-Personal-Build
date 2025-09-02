@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Status
 
-Next.js frontend has been initialized in the `frontend/` directory with TypeScript, Tailwind CSS, shadcn/ui configured, a complete pricing landing page, and navigation bar.
+Next.js frontend has been initialized in the `frontend/` directory with TypeScript, Tailwind CSS, shadcn/ui configured, a complete pricing landing page, navigation bar, and authentication pages (login/signup).
 
 ## Development Setup
 
@@ -36,6 +36,10 @@ Next.js frontend has been initialized in the `frontend/` directory with TypeScri
 ```
 ├── frontend/           # Next.js application
 │   ├── app/           # App Router pages
+│   │   ├── login/     # Login page
+│   │   │   └── page.tsx
+│   │   ├── signup/    # Signup page
+│   │   │   └── page.tsx
 │   │   ├── layout.tsx # Root layout with navbar
 │   │   └── page.tsx   # Landing page with pricing
 │   ├── components/    # UI components
@@ -58,6 +62,8 @@ Next.js frontend has been initialized in the `frontend/` directory with TypeScri
 
 - Frontend is now set up with Next.js 15, TypeScript, Tailwind CSS, and shadcn/ui
 - Landing page implemented with pricing tiers (Free $0, Pro $29, Enterprise $99)
+- Authentication pages: login (/login) and signup (/signup) with form validation
+- Social login options (Google, Facebook) ready for OAuth integration
 - Navigation bar with logo and action buttons (Login, Get Started)
 - Environment variables properly configured with .env.example template
 - Professional pricing table component with responsive design
