@@ -4,22 +4,49 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Status
 
-This repository is currently empty and appears to be a new Mini-SaaS application project. The CLAUDE.md file will need to be updated as the project develops.
+Next.js frontend has been initialized in the `frontend/` directory with TypeScript and Tailwind CSS configured.
 
 ## Development Setup
 
-*To be filled in once the project structure is established*
+### Frontend Setup
+1. Navigate to the frontend directory: `cd frontend`
+2. Install dependencies: `npm install`
+3. Start development server: `npm run dev`
+4. Access at http://localhost:3000
 
 ## Commands
 
-*Common development commands will be added here once the project setup is complete*
+### Frontend Commands
+- `npm run dev` - Start Next.js development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint linting
 
 ## Architecture
 
-*Project architecture and structure will be documented here as the codebase develops*
+### Frontend Architecture
+- **Framework**: Next.js 15 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Location**: `frontend/` directory
+
+### Project Structure
+```
+├── frontend/           # Next.js application
+│   ├── src/
+│   │   └── app/       # App Router pages
+│   ├── public/        # Static assets
+│   ├── tailwind.config.ts
+│   ├── next.config.ts
+│   └── package.json
+├── README.md
+└── CLAUDE.md
+```
 
 ## Notes for Future Development
 
-- This is a fresh repository - no existing codebase to analyze
-- Project appears to be intended as a "Mini-SaaS-App-Personal-Build" based on directory name
-- Update this file as the project structure and requirements become clear
+- Frontend is now set up with Next.js 15, TypeScript, and Tailwind CSS
+- Consider adding backend API (Express.js, Prisma, PostgreSQL)
+- Plan for authentication system
+- Database design for SaaS features
+- Deployment configuration (Vercel for frontend)

@@ -1,26 +1,57 @@
 # Mini SaaS App - Personal Build
 
-A personal SaaS application project.
+A personal SaaS application built with Next.js and TypeScript.
+
+## Tech Stack
+
+- **Frontend**: Next.js 15 with TypeScript
+- **Styling**: Tailwind CSS
+- **Package Manager**: npm
 
 ## Getting Started
 
-This project is currently in initial setup phase.
-
 ### Prerequisites
 
-*To be documented once tech stack is determined*
+- Node.js 18.18 or later
+- npm
 
 ### Installation
 
-*Installation instructions will be added here*
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd Mini-SaaS-App-Personal-Build
+   ```
 
-### Usage
+2. Install frontend dependencies:
+   ```bash
+   cd frontend
+   npm install
+   ```
 
-*Usage instructions will be added here*
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ## Development
 
-*Development workflow and guidelines will be documented here*
+### Frontend Development
+
+The frontend is located in the `frontend/` directory and uses:
+- Next.js App Router
+- TypeScript for type safety
+- Tailwind CSS for styling
+
+### Available Scripts
+
+In the `frontend/` directory:
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
 
 ## Contributing
 
