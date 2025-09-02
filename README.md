@@ -30,12 +30,18 @@ A personal SaaS application built with Next.js and TypeScript.
    npm install
    ```
 
-3. Start the development server:
+3. Set up environment variables:
+   ```bash
+   cp .env.example .env.local
+   # Edit .env.local with your actual values
+   ```
+
+4. Start the development server:
    ```bash
    npm run dev
    ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ## Development
 
@@ -46,6 +52,14 @@ The frontend is located in the `frontend/` directory and uses:
 - TypeScript for type safety
 - Tailwind CSS for styling
 - shadcn/ui for UI components
+- Environment variables for configuration
+
+### Current Features
+
+- **Landing Page**: Professional pricing page with three tiers (Free, Pro, Enterprise)
+- **Responsive Design**: Mobile-first approach with responsive grid layout
+- **Modern UI Components**: Built with shadcn/ui components (Card, Button, Badge)
+- **Environment Configuration**: Proper .env setup with example file
 
 ### Available Scripts
 

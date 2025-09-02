@@ -4,15 +4,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Status
 
-Next.js frontend has been initialized in the `frontend/` directory with TypeScript, Tailwind CSS, and shadcn/ui configured.
+Next.js frontend has been initialized in the `frontend/` directory with TypeScript, Tailwind CSS, shadcn/ui configured, and a complete pricing landing page.
 
 ## Development Setup
 
 ### Frontend Setup
 1. Navigate to the frontend directory: `cd frontend`
 2. Install dependencies: `npm install`
-3. Start development server: `npm run dev`
-4. Access at http://localhost:3000
+3. Copy environment variables: `cp .env.example .env.local`
+4. Start development server: `npm run dev`
+5. Access at http://localhost:3000
 
 ## Commands
 
@@ -35,10 +36,14 @@ Next.js frontend has been initialized in the `frontend/` directory with TypeScri
 ```
 ├── frontend/           # Next.js application
 │   ├── app/           # App Router pages
+│   │   └── page.tsx   # Landing page with pricing
 │   ├── components/    # UI components
-│   │   └── ui/       # shadcn/ui components
+│   │   ├── ui/       # shadcn/ui components
+│   │   └── pricing-table.tsx  # Pricing component
 │   ├── lib/          # Utilities (utils.ts)
 │   ├── public/       # Static assets
+│   ├── .env.example  # Environment template
+│   ├── .env.local    # Local environment (gitignored)
 │   ├── components.json  # shadcn/ui config
 │   ├── tailwind.config.ts
 │   ├── next.config.ts
@@ -50,6 +55,9 @@ Next.js frontend has been initialized in the `frontend/` directory with TypeScri
 ## Notes for Future Development
 
 - Frontend is now set up with Next.js 15, TypeScript, Tailwind CSS, and shadcn/ui
+- Landing page implemented with pricing tiers (Free $0, Pro $29, Enterprise $99)
+- Environment variables properly configured with .env.example template
+- Professional pricing table component with responsive design
 - Consider adding backend API (Express.js, Prisma, PostgreSQL)
 - Plan for authentication system
 - Database design for SaaS features
