@@ -9,8 +9,12 @@ import { Label } from "@/components/ui/label"
 export default function SignupPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // TODO: Implement signup logic
+    // TODO: Implement real signup logic
     console.log("Signup form submitted")
+    
+    // For demo purposes, redirect to login page after successful signup
+    // In real app, this would happen after successful account creation
+    window.location.href = "/login"
   }
 
   return (

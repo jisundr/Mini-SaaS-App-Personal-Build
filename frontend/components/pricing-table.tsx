@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -100,13 +101,27 @@ export function PricingTable() {
           </CardContent>
 
           <CardFooter className="mt-auto">
-            <Button 
-              variant={tier.buttonVariant} 
-              size="lg" 
-              className="w-full"
-            >
-              {tier.buttonText}
-            </Button>
+            {tier.buttonText === "Contact Sales" ? (
+              <Button 
+                variant={tier.buttonVariant} 
+                size="lg" 
+                className="w-full"
+                onClick={() => console.log("Contact Sales clicked")}
+              >
+                {tier.buttonText}
+              </Button>
+            ) : (
+              <Button 
+                variant={tier.buttonVariant} 
+                size="lg" 
+                className="w-full"
+                asChild
+              >
+                <Link href="/signup">
+                  {tier.buttonText}
+                </Link>
+              </Button>
+            )}
           </CardFooter>
         </Card>
       ))}

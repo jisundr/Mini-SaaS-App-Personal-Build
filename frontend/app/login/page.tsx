@@ -9,8 +9,12 @@ import { Label } from "@/components/ui/label"
 export default function LoginPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // TODO: Implement login logic
+    // TODO: Implement real authentication logic
     console.log("Login form submitted")
+    
+    // For demo purposes, redirect to profile page
+    // In real app, this would happen after successful authentication
+    window.location.href = "/profile"
   }
 
   return (
